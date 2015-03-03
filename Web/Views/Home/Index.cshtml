@@ -1,0 +1,33 @@
+﻿<h2>Add new item</h2>
+
+<br/>
+
+<div ng-app="app" ng-controller="todoCtrl">
+
+    <div>
+        <input type="text" id="item" class="form-control input-sm pull-left" ng-model="description" />&nbsp;&nbsp;
+        <button type="button" class="btn btn-primary btn-sm pull-left" id="add" ng-click="add(description)">Add</button>
+    </div>
+
+    <br class="clearfix">
+
+    <div id="loading-wrapper">
+        <div class="loading"></div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Remove ?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in list">
+                <td>{{ item.description }}</td>
+                <td><button type="button" class="btn btn-danger btn-sm" id="remove" ng-click="remove(item)">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>    
+
+</div>

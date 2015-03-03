@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="Service" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-06.2.4">
+  <Role name="Web">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="UseBackplane" value="false" />
+      <Setting name="Microsoft.WindowsAzure.ServiceBus.ConnectionString" value="Endpoint=sb://sharedtodo-service.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=Zg2fLQBTe3AJI/W8Yt8Zg2jngMuKiC2V0pcl7MEHcLc=" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
