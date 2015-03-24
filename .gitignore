@@ -18,8 +18,7 @@ Thumbs.db
 *.log
 *.xsc
 *.xss
-*[Bb]in/
-[Bb]in
+**/Web/[Bb]in/
 [Dd]ebug*/
 */csx/*
 *.sbr
